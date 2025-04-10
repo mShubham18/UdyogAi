@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UdhyogAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">UdhyogAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/udhyogai/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/udhyogai/disease.html">Disease Predict</a></li>
+          <li class="nav-item"><a class="nav-link" href="/udhyogai/crop_recommend_section.html">Crop Recommend</a></li>
+          <li class="nav-item"><a class="nav-link" href="/udhyogai/contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+ <!-- Home Section with Carousel -->
+<section id="home" class="p-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Welcome to UdhyogAI</h2>
+    <p><strong>Description:</strong> Empowering agriculture with AI-based solutions.</p>
+
+    <!-- Bootstrap Carousel -->
+    <div id="udhyogCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow-sm">
+        <div class="carousel-item active">
+          <img src="./img/farmer_1.jpg" class="d-block w-100" alt="Farming AI">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>AI-Driven Farming</h5>
+            <p>Leverage deep learning for smarter crop planning.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/farmer_2.jpg" class="d-block w-100" alt="Data Agriculture">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Data Powered Insights</h5>
+            <p>Transform soil and climate data into decisions.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/farmer_3.jpg" class="d-block w-100" alt="Disease Prediction">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Predict & Prevent</h5>
+            <p>Get early alerts for crop diseases using AI models.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#udhyogCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#udhyogCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="p-5">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send</button>
+      </form>
+      <div class="mt-4">
+        <p><strong>Map:</strong> [Embed Google Map here if needed]</p>
+        <p><strong>Title:</strong> UdhyogAI Support Team</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UdhyogAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">UdhyogAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/udhyogai/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/udhyogai/disease.html">Disease Predict</a></li>
+            <li class="nav-item"><a class="nav-link" href="/udhyogai/crop_recommend_section.html">Crop Recommend</a></li>
+            <li class="nav-item"><a class="nav-link" href="/udhyogai/contact_us.html">Contact Us</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Crop Recommend Section -->
+<section id="crop" class="p-5 bg-light">
+    <div class="container">
+      <h2>Crop Recommendation</h2>
+      <form>
+        <div class="mb-3">
+          <label for="cropInput" class="form-label">Enter Soil/Weather Info</label>
+          <input type="text" class="form-control" id="cropInput" placeholder="e.g. pH 6.5, Humidity 70%">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <p class="mt-3"><strong>Prediction:</strong> [Recommended crop will appear here]</p>
+      <p><strong>Insights:</strong> Generated using a highly tuned Machine Learning model.</p>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

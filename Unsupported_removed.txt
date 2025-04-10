@@ -1,0 +1,21 @@
+import os
+import tensorflow as tf
+
+folder_path = "datasets/Validation"  # Or "datasets/Validation"
+allowed_exts = ('.jpg', '.jpeg', '.png', '.bmp', '.gif')
+
+print(f"Checking images in {folder_path}...\n")
+
+for root, dirs, files in os.walk(folder_path):
+    for file in files:
+        file_path = os.path.join(root, file)
+        file_lower = file.lower()
+
+        if file_lower.endswith(allowed_exts):
+            try:
+                img_raw = tf.io.read_file(file_path)
+                _ = tf.io.decode_image(img_raw)  # <- TensorFlow decoder check
+            except Exception as e:
+                print(f"❌ TensorFlow cannot decode: {file_path} — {e}")
+                os.remove(file_path)
+                print(f"✅ Deleted file at {file_path}")
